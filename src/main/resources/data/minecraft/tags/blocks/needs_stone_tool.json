@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "materials:tin_ore",
+    "materials:tin_block",
+    "materials:raw_tin_block",
+    "materials:lead_ore",
+    "materials:lead_block",
+    "materials:raw_lead_block",
+    "materials:silver_block",
+    "materials:raw_silver_block",
+    "materials:platinum_block",
+    "materials:raw_platinum_block",
+    "materials:titanium_block",
+    "materials:raw_titanium_block"
+  ]
+}

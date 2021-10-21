@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "materials:lead_block",
+    "materials:silver_block",
+    "materials:platinum_block",
+    "materials:titanium_block"
+  ]
+}

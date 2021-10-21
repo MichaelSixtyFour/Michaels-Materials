@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WWW",
+    "WWW",
+    "WWW"
+  ],
+  "key": {
+    "W": {
+      "item": "materials:raw_tin"
+    }
+  },
+  "result": {
+    "item": "materials:raw_tin_block",
+    "count": 1
+  }
+}

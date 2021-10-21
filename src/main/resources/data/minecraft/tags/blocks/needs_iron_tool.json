@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "materials:silver_ore",
+    "materials:platinum_ore",
+    "materials:titanium_ore"
+  ]
+}

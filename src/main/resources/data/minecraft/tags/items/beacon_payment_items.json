@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "materials:lead_ingot",
+    "materials:silver_ingot",
+    "materials:platinum_ingot",
+    "materials:titanium_ingot"
+  ]
+}
