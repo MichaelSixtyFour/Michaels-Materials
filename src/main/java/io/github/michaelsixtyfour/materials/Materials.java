@@ -8,6 +8,7 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
@@ -19,6 +20,10 @@ import net.minecraft.util.registry.Registry;
 public class Materials implements ModInitializer {
 
     public static final String MOD_ID = "materials";
+
+    public static final ItemGroup MATERIALS_GROUP = FabricItemGroupBuilder.build(
+            new Identifier("materials","general"),
+            () -> new ItemStack(Materials.TIN_ORE));
 
     public static final Block TIN_ORE = new Block(FabricBlockSettings.of(Material.STONE).breakByHand(false).breakByTool(FabricToolTags.PICKAXES).sounds(BlockSoundGroup.STONE)
             .strength(5, 6.0f));
@@ -35,13 +40,12 @@ public class Materials implements ModInitializer {
     public static final Block TITANIUM_ORE = new Block(FabricBlockSettings.of(Material.STONE).breakByHand(false).breakByTool(FabricToolTags.PICKAXES).sounds(BlockSoundGroup.STONE)
             .strength(5, 6.0f));
 
-    public static final ItemGroup MATERIALS_GROUP = FabricItemGroupBuilder.build(
-            new Identifier("materials","general"),
-            () -> new ItemStack(Materials.TIN_ORE));
-
+    public static final Item COAL_NUGGET = new Item(new FabricItemSettings().group(Materials.MATERIALS_GROUP));
+    public static final Item CHARCOAL_NUGGET = new Item(new FabricItemSettings().group(Materials.MATERIALS_GROUP));
 
     public void runFactories() {
         String[] metals = {"tin", "lead", "silver", "platinum", "titanium"};
+        //String[] alloys = {"bronze", "steel"};
 
         for (String metal : metals) {
             RawOreFactory.rawOreFactory("raw_" + metal);
@@ -50,6 +54,11 @@ public class Materials implements ModInitializer {
             RawBlockFactory.rawBlockFactory("raw_" + metal + "_block");
             System.out.print(metal);
         }
+
+        //for (String alloy : alloys) {
+        //    IngotFactory.ingotFactory(alloy + "_ingot");
+        //    BlockFactory.blockFactory(alloy + "_block");
+        //}
     }
 
     @Override
@@ -77,6 +86,15 @@ public class Materials implements ModInitializer {
         // generate ores/raw ores/ingots
         runFactories();
         OreGenerator.oreInit();
+
+        // nuggets
+        Registry.register(Registry.ITEM, new Identifier(Materials.MOD_ID, "coal_nugget"), COAL_NUGGET);
+        Registry.register(Registry.ITEM, new Identifier(Materials.MOD_ID, "charcoal_nugget"), CHARCOAL_NUGGET);
+
+        // fuel registry
+        FuelRegistry.INSTANCE.add(COAL_NUGGET, 200);
+        FuelRegistry.INSTANCE.add(CHARCOAL_NUGGET, 200);
+
 
     }
 }

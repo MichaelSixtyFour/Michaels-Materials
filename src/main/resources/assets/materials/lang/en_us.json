@@ -29,5 +29,8 @@
     "block.materials.titanium_block": "Block of Titanium",
     "block.materials.raw_titanium_block": "Block of Raw Titanium",
 
+    "item.materials.coal_nugget": "Coal Nugget",
+    "item.materials.charcoal_nugget": "Charcoal Nugget",
+
     "itemGroup.materials.general": "Materials"
 }
