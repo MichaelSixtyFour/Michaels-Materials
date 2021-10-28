@@ -1,9 +1,8 @@
 package io.github.michaelsixtyfour.materials;
 
-import io.github.michaelsixtyfour.materials.blocks.BlockFactory;
-import io.github.michaelsixtyfour.materials.blocks.RawBlockFactory;
-import io.github.michaelsixtyfour.materials.items.IngotFactory;
-import io.github.michaelsixtyfour.materials.items.RawOreFactory;
+import de.guntram.mcmod.crowdintranslate.CrowdinTranslate;
+import io.github.michaelsixtyfour.materials.blocks.*;
+import io.github.michaelsixtyfour.materials.items.*;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;

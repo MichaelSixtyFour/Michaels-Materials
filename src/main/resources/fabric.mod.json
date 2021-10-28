@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "io.github.michaelsixtyfour.materials.Materials"
+    ],
+    "client": [
+      "io.github.michaelsixtyfour.materials.MaterialsClient"
     ]
   },
   "mixins": [
