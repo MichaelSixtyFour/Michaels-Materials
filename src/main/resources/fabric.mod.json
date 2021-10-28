@@ -3,7 +3,7 @@
   "id": "materials",
   "version": "${version}",
 
-  "name": "Materials",
+  "name": "Materials for Fabric",
   "description": "Materials for Minecraft Fabric 1.17",
   "authors": [
     "MichaelSixtyFour"
