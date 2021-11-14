@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X",
+    "O",
+    "X"
+  ],
+  "key": {
+    "O": {
+      "tag": "c:copper_ores"
+    },
+    "X": {
+      "item": "minecraft:cobbled_deepslate"
+    }
+  },
+  "result": {
+    "item": "materials:copper_dust",
+    "count": 1
+  }
+}

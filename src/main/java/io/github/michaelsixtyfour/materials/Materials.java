@@ -1,17 +1,22 @@
 package io.github.michaelsixtyfour.materials;
 
 import io.github.michaelsixtyfour.materials.blocks.BlockFactory;
+import io.github.michaelsixtyfour.materials.blocks.GrinderBlock;
+import io.github.michaelsixtyfour.materials.blocks.GrinderBlockEntity;
 import io.github.michaelsixtyfour.materials.blocks.RawBlockFactory;
+import io.github.michaelsixtyfour.materials.items.DustFactory;
 import io.github.michaelsixtyfour.materials.items.IngotFactory;
 import io.github.michaelsixtyfour.materials.items.RawOreFactory;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
+import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.item.*;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
@@ -24,6 +29,9 @@ public class Materials implements ModInitializer {
     public static final ItemGroup MATERIALS_GROUP = FabricItemGroupBuilder.build(
             new Identifier("materials","general"),
             () -> new ItemStack(Materials.TIN_ORE));
+
+    public static final GrinderBlock GRINDER_BLOCK = new GrinderBlock(FabricBlockSettings.of(Material.STONE));
+    public static BlockEntityType<GrinderBlockEntity> GRINDER_BLOCK_ENTITY;
 
     public static final Block TIN_ORE = new Block(FabricBlockSettings.of(Material.STONE).breakByHand(false).breakByTool(FabricToolTags.PICKAXES).sounds(BlockSoundGroup.STONE)
             .strength(5, 6.0f));
@@ -45,6 +53,7 @@ public class Materials implements ModInitializer {
 
     public void runFactories() {
         String[] metals = {"tin", "lead", "silver", "platinum", "titanium"};
+        String[] vanilla = {"copper", "iron", "gold"};
         //String[] alloys = {"bronze", "steel"};
 
         for (String metal : metals) {
@@ -52,7 +61,11 @@ public class Materials implements ModInitializer {
             IngotFactory.ingotFactory(metal + "_ingot");
             BlockFactory.blockFactory(metal + "_block");
             RawBlockFactory.rawBlockFactory("raw_" + metal + "_block");
-            System.out.print(metal);
+            DustFactory.dustFactory(metal + "_dust");
+        }
+
+        for (String van : vanilla ) {
+            DustFactory.dustFactory(van + "_dust");
         }
 
         //for (String alloy : alloys) {
@@ -63,6 +76,11 @@ public class Materials implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        // GRINDER
+        Registry.register(Registry.BLOCK, new Identifier(Materials.MOD_ID,"grinder_block"), GRINDER_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(Materials.MOD_ID, "grinder_block"), new BlockItem(GRINDER_BLOCK, new FabricItemSettings().group(Materials.MATERIALS_GROUP)));
+        GRINDER_BLOCK_ENTITY = Registry.register(Registry.BLOCK_ENTITY_TYPE, "materials:grinder_block_entity", FabricBlockEntityTypeBuilder.create(GrinderBlockEntity::new, GRINDER_BLOCK).build(null));
+
         // TIN ORE
         Registry.register(Registry.BLOCK, new Identifier(Materials.MOD_ID,"tin_ore"), TIN_ORE);
         Registry.register(Registry.ITEM, new Identifier(Materials.MOD_ID, "tin_ore"), new BlockItem(TIN_ORE, new FabricItemSettings().group(Materials.MATERIALS_GROUP)));

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X",
+    "O",
+    "X"
+  ],
+  "key": {
+    "O": {
+      "tag": "c:platinum_ores"
+    },
+    "X": {
+      "item": "minecraft:cobbled_deepslate"
+    }
+  },
+  "result": {
+    "item": "materials:platinum_dust",
+    "count": 1
+  }
+}

@@ -1,33 +1,42 @@
 {
     "block.materials.tin_ore": "Tin Ore",
-    "item.materials.raw_tin": "Raw Tin",
-    "item.materials.tin_ingot": "Tin Ingot",
-    "block.materials.tin_block": "Block of Tin",
-    "block.materials.raw_tin_block": "Block of Raw Tin",
-
     "block.materials.lead_ore": "Lead Ore",
-    "item.materials.raw_lead": "Raw Lead",
-    "item.materials.lead_ingot": "Lead Ingot",
-    "block.materials.lead_block": "Block of Lead",
-    "block.materials.raw_lead_block": "Block of Raw Lead",
-
     "block.materials.silver_ore": "Silver Ore",
-    "item.materials.raw_silver": "Raw Silver",
-    "item.materials.silver_ingot": "Silver Ingot",
-    "block.materials.silver_block": "Block of Silver",
-    "block.materials.raw_silver_block": "Block of Raw Silver",
-
     "block.materials.platinum_ore": "Platinum Ore",
-    "item.materials.raw_platinum": "Raw Platinum",
-    "item.materials.platinum_ingot": "Platinum Ingot",
-    "block.materials.platinum_block": "Block of Platinum",
-    "block.materials.raw_platinum_block": "Block of Raw Platinum",
-
     "block.materials.titanium_ore": "Titanium Ore",
+
+    "item.materials.raw_tin": "Raw Tin",
+    "item.materials.raw_lead": "Raw Lead",
+    "item.materials.raw_silver": "Raw Silver",
+    "item.materials.raw_platinum": "Raw Platinum",
     "item.materials.raw_titanium": "Raw Titanium",
+
+    "item.materials.tin_ingot": "Tin Ingot",
+    "item.materials.lead_ingot": "Lead Ingot",
+    "item.materials.silver_ingot": "Silver Ingot",
+    "item.materials.platinum_ingot": "Platinum Ingot",
     "item.materials.titanium_ingot": "Titanium Ingot",
+
+    "block.materials.tin_block": "Block of Tin",
+    "block.materials.lead_block": "Block of Lead",
+    "block.materials.silver_block": "Block of Silver",
+    "block.materials.platinum_block": "Block of Platinum",
     "block.materials.titanium_block": "Block of Titanium",
+
+    "block.materials.raw_tin_block": "Block of Raw Tin",
+    "block.materials.raw_lead_block": "Block of Raw Lead",
+    "block.materials.raw_silver_block": "Block of Raw Silver",
+    "block.materials.raw_platinum_block": "Block of Raw Platinum",
     "block.materials.raw_titanium_block": "Block of Raw Titanium",
+
+    "item.materials.tin_dust": "Tin Dust",
+    "item.materials.lead_dust": "Lead Dust",
+    "item.materials.silver_dust": "Silver Dust",
+    "item.materials.platinum_dust": "Platinum Dust",
+    "item.materials.titanium_dust": "Titanium Dust",
+    "item.materials.copper_dust": "Copper Dust",
+    "item.materials.iron_dust": "Iron Dust",
+    "item.materials.gold_dust": "Gold Dust",
 
     "item.materials.coal_nugget": "Coal Nugget",
     "item.materials.charcoal_nugget": "Charcoal Nugget",
