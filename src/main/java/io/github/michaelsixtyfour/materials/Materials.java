@@ -16,7 +16,7 @@ public class Materials implements ModInitializer {
 
     public static final ItemGroup MATERIALS_GROUP = FabricItemGroupBuilder.build(
             new Identifier("materials","general"),
-            () -> new ItemStack(Items.COPPER_INGOT));
+            () -> new ItemStack(Creator.Ingots.TIN));
 
     @Override
     public void onInitialize() {
