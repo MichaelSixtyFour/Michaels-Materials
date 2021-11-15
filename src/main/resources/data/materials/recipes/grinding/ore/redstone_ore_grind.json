@@ -1,0 +1,15 @@
+{
+  "type": "materials:grinding",
+  "result": {
+    "item": "minecraft:redstone_dust",
+    "count": 4
+  },
+  "ingredients": [
+    {
+      "tag": "c:redstone_ores"
+    },
+    {
+      "tag": "materials:mortars"
+    }
+  ]
+}

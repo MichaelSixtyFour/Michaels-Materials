@@ -1,0 +1,15 @@
+{
+  "type": "materials:grinding",
+  "result": {
+    "item": "materials:diamond_dust",
+    "count": 1
+  },
+  "ingredients": [
+    {
+      "tag": "c:diamonds"
+    },
+    {
+      "tag": "materials:mortars"
+    }
+  ]
+}

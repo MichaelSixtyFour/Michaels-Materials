@@ -1,0 +1,15 @@
+{
+  "type": "materials:grinding",
+  "result": {
+    "item": "materials:lead_dust",
+    "count": 1
+  },
+  "ingredients": [
+    {
+      "tag": "c:lead_ingots"
+    },
+    {
+      "tag": "materials:mortars"
+    }
+  ]
+}

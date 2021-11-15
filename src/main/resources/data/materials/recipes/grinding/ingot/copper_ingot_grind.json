@@ -1,0 +1,15 @@
+{
+  "type": "materials:grinding",
+  "result": {
+    "item": "materials:copper_dust",
+    "count": 1
+  },
+  "ingredients": [
+    {
+      "tag": "c:copper_ingots"
+    },
+    {
+      "tag": "materials:mortars"
+    }
+  ]
+}

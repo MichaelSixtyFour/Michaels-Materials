@@ -1,0 +1,15 @@
+{
+  "type": "materials:grinding",
+  "result": {
+    "item": "materials:platinum_dust",
+    "count": 1
+  },
+  "ingredients": [
+    {
+      "tag": "c:platinum_ores"
+    },
+    {
+      "tag": "materials:mortars"
+    }
+  ]
+}

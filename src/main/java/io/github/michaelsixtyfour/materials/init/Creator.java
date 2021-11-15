@@ -179,7 +179,7 @@ public class Creator {
 
     /** Dusts **/
     public enum Dusts implements ItemConvertible {
-        TIN, LEAD, SILVER, PLATINUM, TITANIUM;
+        COPPER, IRON, GOLD, LAPIS, DIAMOND, NETHERITE, EMERALD, TIN, LEAD, SILVER, PLATINUM, TITANIUM;
 
         public final String name;
         public final Item item;

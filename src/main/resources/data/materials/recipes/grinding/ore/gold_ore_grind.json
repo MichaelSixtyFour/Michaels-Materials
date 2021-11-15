@@ -1,0 +1,15 @@
+{
+  "type": "materials:grinding",
+  "result": {
+    "item": "materials:gold_dust",
+    "count": 1
+  },
+  "ingredients": [
+    {
+      "tag": "c:gold_ores"
+    },
+    {
+      "tag": "materials:mortars"
+    }
+  ]
+}

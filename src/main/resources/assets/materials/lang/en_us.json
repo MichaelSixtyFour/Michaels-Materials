@@ -17,6 +17,12 @@
     "item.materials.platinum_ingot": "Platinum Ingot",
     "item.materials.titanium_ingot": "Titanium Ingot",
 
+    "item.materials.tin_nugget": "Tin Nugget",
+    "item.materials.lead_nugget": "Lead Nugget",
+    "item.materials.silver_nugget": "Silver Nugget",
+    "item.materials.platinum_nugget": "Platinum Nugget",
+    "item.materials.titanium_nugget": "Titanium Nugget",
+
     "block.materials.tin_block": "Block of Tin",
     "block.materials.lead_block": "Block of Lead",
     "block.materials.silver_block": "Block of Silver",
@@ -37,11 +43,15 @@
     "item.materials.copper_dust": "Copper Dust",
     "item.materials.iron_dust": "Iron Dust",
     "item.materials.gold_dust": "Gold Dust",
+    "item.materials.lapis_dust": "Lapis Dust",
+    "item.materials.diamond_dust": "Diamond Dust",
+    "item.materials.emerald_dust": "Emerald Dust",
+    "item.materials.netherite_dust": "Netherite Dust",
 
     "item.materials.coal_nugget": "Coal Nugget",
     "item.materials.charcoal_nugget": "Charcoal Nugget",
 
-    "item.materials.mortar_and_pestle_tool": "Mortar and Pestle",
+    "item.materials.mortar_and_pestle": "Mortar and Pestle",
 
     "itemGroup.materials.general": "Materials"
 }

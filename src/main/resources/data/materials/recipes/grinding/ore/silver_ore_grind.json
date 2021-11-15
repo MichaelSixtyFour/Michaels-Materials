@@ -1,0 +1,15 @@
+{
+  "type": "materials:grinding",
+  "result": {
+    "item": "materials:silver_dust",
+    "count": 1
+  },
+  "ingredients": [
+    {
+      "tag": "c:silver_ores"
+    },
+    {
+      "tag": "materials:mortars"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "type": "materials:grinding",
+  "result": {
+    "item": "materials:titanium_dust",
+    "count": 1
+  },
+  "ingredients": [
+    {
+      "tag": "c:titanium_ores"
+    },
+    {
+      "tag": "materials:mortars"
+    }
+  ]
+}
