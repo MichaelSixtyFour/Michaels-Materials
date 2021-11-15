@@ -24,9 +24,12 @@
 
 package io.github.michaelsixtyfour.materials.utils;
 
+import io.github.michaelsixtyfour.materials.craft.GrindingRecipe;
+import io.github.michaelsixtyfour.materials.craft.GrindingRecipeSerializer;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import org.apache.commons.lang3.Validate;
@@ -130,6 +133,15 @@ public class MaterialsRegistry {
 
     public static void addLoot(Item item, int minSize, int maxSize, double chance, Identifier list) {
         //	lp.addItem(LootManager.createLootEntry(item, minSize, maxSize, chance, list));
+    }
+
+    public static void registerRecipeSerial(Registry<RecipeSerializer<?>> registry) {
+        registerRecipe(registry, InitUtility.makeId("grinding_serial"), GrindingRecipeSerializer.INSTANCE);
+    }
+
+    private static void registerRecipe(Registry<RecipeSerializer<?>> registry, Identifier id,
+                                       RecipeSerializer<?> serializer) {
+        Registry.register(registry, id, serializer);
     }
 
 }

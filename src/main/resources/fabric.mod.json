@@ -23,7 +23,7 @@
     ]
   },
   "mixins": [
-
+    "materials.mixins.json"
   ],
 
   "depends": {

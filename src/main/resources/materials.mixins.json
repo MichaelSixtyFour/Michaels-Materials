@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "io.github.michaelsixtyfour.materials.mixins",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [
+    "ShapelessRecipeMixin"
+  ],
+  "client": [],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
