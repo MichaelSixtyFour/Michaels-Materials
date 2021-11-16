@@ -1,19 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "WSW",
-    " W "
+    "OSO",
+    " O "
   ],
   "key": {
-    "C": {
-      "item": "minecraft:cobblestone"
+    "O": {
+      "item": "minecraft:obsidian"
     },
     "S": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "materials:mortar_and_pestle",
+    "item": "materials:reinforced_mortar_and_pestle",
     "count": 1
   }
 }

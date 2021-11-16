@@ -1,0 +1,15 @@
+{
+  "type": "materials:grinding",
+  "result": {
+    "item": "materials:netherite_dust",
+    "count": 1
+  },
+  "ingredients": [
+    {
+      "item": "minecraft:netherite_ingot"
+    },
+    {
+      "tag": "materials:reinforced_mortars"
+    }
+  ]
+}

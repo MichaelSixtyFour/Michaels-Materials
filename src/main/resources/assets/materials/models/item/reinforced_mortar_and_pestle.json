@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+        "layer0": "materials:item/reinforced_mortar_and_pestle"
+  }
+}
