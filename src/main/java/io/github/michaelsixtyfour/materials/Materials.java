@@ -8,6 +8,8 @@ import io.github.michaelsixtyfour.materials.tools.ReinforcedMortarAndPestleTool;
 import io.github.michaelsixtyfour.materials.tools.ReinforcedMortarAndPestleToolMaterial;
 import io.github.michaelsixtyfour.materials.utils.InitUtility;
 import io.github.michaelsixtyfour.materials.utils.MaterialsRegistry;
+import io.github.michaelsixtyfour.materials.world.DataDrivenFeature;
+import io.github.michaelsixtyfour.materials.world.OreGeneration;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -15,8 +17,10 @@ import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import net.minecraft.util.registry.BuiltinRegistries;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class Materials implements ModInitializer {
 
@@ -55,6 +59,8 @@ public class Materials implements ModInitializer {
         FuelRegistry.INSTANCE.add(Creator.Nuggets.COAL, 200);
         FuelRegistry.INSTANCE.add(Creator.Nuggets.CHARCOAL, 200);
 
+        //Ore Generation
+        OreGeneration.oreGenInit();
 
     }
 }
