@@ -1,6 +1,6 @@
 {
   "replace": false,
   "values": [
-    "minecraft:emerald"
+    "materials:copper_ingot"
   ]
 }

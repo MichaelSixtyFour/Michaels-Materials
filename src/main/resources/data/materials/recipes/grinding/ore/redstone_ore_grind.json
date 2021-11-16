@@ -1,7 +1,7 @@
 {
   "type": "materials:grinding",
   "result": {
-    "item": "minecraft:redstone_dust",
+    "item": "minecraft:redstone",
     "count": 4
   },
   "ingredients": [
