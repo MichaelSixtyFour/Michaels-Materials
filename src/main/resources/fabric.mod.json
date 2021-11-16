@@ -4,7 +4,7 @@
   "version": "${version}",
 
   "name": "Michael's Materials [Fabric]",
-  "description": "Materials for Minecraft Fabric 1.17",
+  "description": "Materials for Minecraft Fabric 1.18",
   "authors": [
     "MichaelSixtyFour"
   ],
@@ -29,7 +29,7 @@
   "depends": {
     "fabricloader": ">=0.11.3",
     "fabric": "*",
-    "minecraft": "1.17.x",
+    "minecraft": "1.18.x",
     "java": ">=16"
   },
   "suggests": {
